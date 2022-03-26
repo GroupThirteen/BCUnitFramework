@@ -1,0 +1,11 @@
+C:\Users\jaffa\source\repos\Capstone Project\CapstoneMainDirectory\MainMethod\bin\Debug\MainMethod.exe
+C:\Users\jaffa\source\repos\Capstone Project\CapstoneMainDirectory\MainMethod\bin\Debug\MainMethod.pdb
+C:\Users\jaffa\source\repos\Capstone Project\CapstoneMainDirectory\MainMethod\bin\Debug\BCUnitEngine.dll
+C:\Users\jaffa\source\repos\Capstone Project\CapstoneMainDirectory\MainMethod\bin\Debug\BCUnitFramework.dll
+C:\Users\jaffa\source\repos\Capstone Project\CapstoneMainDirectory\MainMethod\bin\Debug\BCUnitEngine.pdb
+C:\Users\jaffa\source\repos\Capstone Project\CapstoneMainDirectory\MainMethod\bin\Debug\BCUnitFramework.pdb
+C:\Users\jaffa\source\repos\Capstone Project\CapstoneMainDirectory\MainMethod\obj\Debug\MainMethod.csproj.AssemblyReference.cache
+C:\Users\jaffa\source\repos\Capstone Project\CapstoneMainDirectory\MainMethod\obj\Debug\MainMethod.csproj.CoreCompileInputs.cache
+C:\Users\jaffa\source\repos\Capstone Project\CapstoneMainDirectory\MainMethod\obj\Debug\MainMethod.csproj.CopyComplete
+C:\Users\jaffa\source\repos\Capstone Project\CapstoneMainDirectory\MainMethod\obj\Debug\MainMethod.exe
+C:\Users\jaffa\source\repos\Capstone Project\CapstoneMainDirectory\MainMethod\obj\Debug\MainMethod.pdb

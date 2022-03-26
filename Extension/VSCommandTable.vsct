@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+  <Include href="VSGlobals.vsct"/>
+
+  <Commands package="Extension">
+
+    <Menus>
+      <Menu guid="Extension" id="TopLevelMenu" priority="0x700" type="Menu">
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS" />
+        <Strings>
+          <ButtonText>BC Unit</ButtonText>
+        </Strings>
+      </Menu>
+    </Menus>
+    
+    
+    <Groups>
+      <Group guid="Extension" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="Extension" id="TopLevelMenu"/>
+      </Group>
+    </Groups>
+
+    <!--This section defines the elements the user can interact with, like a menu command or a button
+        or combo box in a toolbar. -->
+    <Buttons>
+      <Button guid="Extension" id="MyCommandRunSolution" priority="0x0100" type="Button">
+        <Parent guid="Extension" id="MyMenuGroup" />
+              <Icon guid="ImageCatalogGuid" id="RunChecked" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Run tests in solution</ButtonText>
+          <LocCanonicalName>.Extension.MyCommandRunSolution</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="Extension" id="MyCommandRunProject" priority="0x0101" type="Button">
+        <Parent guid="Extension" id="MyMenuGroup" />
+              <Icon guid="ImageCatalogGuid" id="NewRunSettings" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Run tests in current project </ButtonText>
+          <LocCanonicalName>.Extension.MyCommandRunProject</LocCanonicalName>
+        </Strings>
+      </Button>
+      
+      
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="Extension" value="{097cac92-5c56-4372-8db7-2e279a3a25cb}">
+      <IDSymbol name="MyMenuGroup" value="0x0001" />
+      <IDSymbol name="TopLevelMenu" value="0x1021"/>
+      <IDSymbol name="MyCommandRunSolution" value="0x0100" />
+      <IDSymbol name="MyCommandRunProject" value="0x0101" />
+      
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
