@@ -52,6 +52,8 @@
     <Compile Include="TestClassAttribute.cs" />
     <Compile Include="TestMethodAttribute.cs" />
     <Compile Include="TestOutput.cs" />
+    <Compile Include="XmlBuilder.cs" />
+    <Compile Include="XmlTestOutput.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

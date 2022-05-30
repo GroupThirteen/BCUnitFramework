@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Viuq9i2grBDyIaBRLrzL2sbbPK9kOpwkgcwSlHkYWOpGQE7s/b9Rh4zKPApOKM2j66hG8C+ouGECdnQPszQI0w==",
+  "dgSpecHash": "WLrjYyY3aOehq7X6v/5MPwP3Zf53p7Ans+eErOijen4es9z79e6WhLpQzTFkNSQHDoXyeQECufjIHfU0VAXuow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jaffa\\source\\repos\\Capstone Project\\CapstoneMainDirectory\\Extension\\Extension.csproj",
+  "projectFilePath": "C:\\Users\\jaffa\\Desktop\\CapstoneDirectory\\Extension\\Extension.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jaffa\\.nuget\\packages\\community.visualstudio.toolkit.16\\16.0.330\\community.visualstudio.toolkit.16.16.0.330.nupkg.sha512",
     "C:\\Users\\jaffa\\.nuget\\packages\\community.visualstudio.toolkit.analyzers\\1.0.330\\community.visualstudio.toolkit.analyzers.1.0.330.nupkg.sha512",

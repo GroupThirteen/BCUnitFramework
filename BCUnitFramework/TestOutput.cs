@@ -14,7 +14,6 @@ namespace BCUnitFramework
         private  string result;
         
 
-   
         
         public void Print(string str)
         {
@@ -25,9 +24,6 @@ namespace BCUnitFramework
         {
             return result;
         }
-        public void clearResult()
-        {
-            result = String.Empty;
-        }
+
     }
 }

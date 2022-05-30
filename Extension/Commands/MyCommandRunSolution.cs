@@ -1,4 +1,5 @@
 ﻿using BCUnitEngine;
+using BCUnitFramework;
 using Community.VisualStudio.Toolkit;
 using Microsoft.VisualStudio.Shell;
 using System;
@@ -16,6 +17,11 @@ namespace Extension
         {
 
             try {
+
+
+                XmlTestOutput.CreateInitialXml();
+               
+                
                 //await VS.MessageBox.ShowAsync("Solution");
 
                 // This will get projects in the solution
@@ -41,10 +47,13 @@ namespace Extension
                         //await pane.WriteLineAsync($"Results of {projectName} Project");
 
 
+
+                        
+
                         //await VS.MessageBox.ShowWarningAsync(projectName + "\n" + projectPath);
                         AssemblyLoader al = new(projectPath, projectName);
 
-                        Engine engine = new(al.TestClasses);
+                        Engine engine = new(al.TestClasses, projectName);
 
                         //await pane.WriteLineAsync("1");
 

@@ -12,6 +12,6 @@ namespace BCUnitFramework
     }
 
     // parse and make 
-    //result prject name, name of classes, name of class , pass or fail
+    // result prject name, name of classes, name of class , pass or fail
     // building the xml as  we loop
 }

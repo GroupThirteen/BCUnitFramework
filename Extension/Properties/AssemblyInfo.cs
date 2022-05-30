@@ -1,6 +1,7 @@
 ﻿using Extension;
 using System.Reflection;
 using System.Runtime.InteropServices;
+using System.Security;
 
 [assembly: AssemblyTitle(Vsix.Name)]
 [assembly: AssemblyDescription(Vsix.Description)]

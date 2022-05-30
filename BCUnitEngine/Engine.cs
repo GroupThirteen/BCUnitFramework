@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Xml;
 using BCUnitFramework;
 
 
@@ -17,50 +18,48 @@ namespace BCUnitEngine
 
         private List<Type> listOfTestAttribute = null;                  // Will hold the 
         private List<string> invokedMethodNames = new List<string>();
+        //private XmlDocument doc = new XmlDocument();
+        private string projectName;
+
 
 
         private ITestOutput testOutput = new TestOutput();
-        public Engine (List<Type> listOfTestAttribute)
+        private XmlTestOutput xmlTestOutput;
+        
+        public Engine (List<Type> listOfTestAttribute, string projectName)
         {
-
+            this.projectName = projectName;
             this.listOfTestAttribute = listOfTestAttribute;
+            xmlTestOutput = new XmlTestOutput(projectName);
 
-    
-            if(listOfTestAttribute != null) {
-                Go();
+            if (listOfTestAttribute != null) {
+                MethodsParser();
             } else {
                 ShowMessage("The list of Test Attribute is null");
             }
         }
 
-        private void Go()
-        {
-            try {
-
-                MethodsParser();
-                
-
-
-            } catch (Exception e) {
-                ShowMessage("ERROR: " + e.Message);
-            }
-
-
-        }
 
 
         // Will parse and find the methods that are decorated with test attributes
         private void MethodsParser()
         {
+
+
+            //xml root
+          
+            //XmlElement root = doc.CreateElement("testsResults");
+
             foreach (Type t in listOfTestAttribute) {
 
+                //XmlNode classElement = root.AppendChild(doc.CreateElement(t.Name));
          
                 // Query to find the BeforeAllTestAttribute tag
                 var BeforeAllTest = from m in t.GetMethods()
                                     where m.GetCustomAttributes(false).Any(a => a is BeforeAllTestsAttribute)
                                     select m;
              
-                InvokeMethod(t, BeforeAllTest);
+                //InvokeMethod(t, BeforeAllTest, classElement);
 
 
                 // Query to find the TestMethodsAttriubte tags
@@ -93,6 +92,9 @@ namespace BCUnitEngine
                 // Concatenate the lists with Order of 1, 2, 3......, then 0, 0, 0
                 List<MethodInfo> newList = withOrder.Concat(withoutOrder).ToList();
 
+                //xml
+
+
                 InvokeMethod(t, newList);
 
 
@@ -108,13 +110,25 @@ namespace BCUnitEngine
         }
 
 
+        //private void InvokeMethod(Type type, IEnumerable<MethodInfo> testList, XmlNode testClassNode)
         private void InvokeMethod(Type type, IEnumerable<MethodInfo> testList)
+
         {
-            
+
             Assertions.SetTestOutput(testOutput);
+            
             if (testList != null) {
                 object instance = Activator.CreateInstance(type);
                 foreach (MethodInfo mInfo in testList) {
+                    Assertions.SetXmlTestOutput(xmlTestOutput);
+                    //XmlNode methodNode = testClassNode.AppendChild(doc.CreateElement("method"));
+                    //XmlAttribute methodNameAttribute = doc.CreateAttribute("method");
+                    //methodNameAttribute.Value = mInfo.Name;
+                    //methodNode.Attributes.Append(methodNameAttribute);
+
+                    //set the iner
+                    //methodNode.InnerText = 
+
                     mInfo.Invoke(instance, new object[0]);
                     invokedMethodNames.Add(mInfo.Name);
                 }

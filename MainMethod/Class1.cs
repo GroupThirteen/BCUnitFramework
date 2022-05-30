@@ -17,12 +17,12 @@ namespace MainMethod
             //List<Type> listOfTestAttribute = al.GetlistOfTestAttribute();
             //Engine engine = new Engine(listOfTestAttribute);
 
-            Assembly assemblyFile = Assembly.LoadFrom(@"C:\Users\jaffa\source\repos\Capstone Project\Testing user\TEST\bin\Debug\TEST.dll");
+            //Assembly assemblyFile = Assembly.LoadFrom(@"C:\Users\jaffa\source\repos\Capstone Project\Testing user\TEST\bin\Debug\TEST.dll");
 
 
 
 
-            Console.WriteLine(assemblyFile);
+            //Console.WriteLine(assemblyFile);
             Console.ReadLine();
         }
     }

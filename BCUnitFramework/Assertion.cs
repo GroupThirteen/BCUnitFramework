@@ -2,7 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Text;
+using System.Xml;
+using System.Xml.Linq;
 
 
 // The fail will not throw an exception it will print only
@@ -23,11 +26,17 @@ namespace BCUnitFramework
     {
 
         private static ITestOutput testOutput = new TestOutput();
+        private static XmlTestOutput xmlTestOutput;
 
 
         public static void SetTestOutput(ITestOutput test)
         {
             testOutput = test;
+        }
+
+        public static void SetXmlTestOutput(XmlTestOutput test)
+        {
+            xmlTestOutput = test;
         }
 
 
@@ -62,6 +71,46 @@ namespace BCUnitFramework
             var type = method.DeclaringType;
             string methodName = method.Name;
             string className = type.Name;
+
+            //if (File.Exists(@"C:\Users\jaffa\Desktop\testSummary.xml")) {
+            //    XDocument myDoc = XDocument.Load(@"C:\Users\jaffa\Desktop\testSummary.xml");
+            //    XElement serviceTicket = myDoc.Root;
+
+            //    serviceTicket.Element("projectName").Add(
+            //          new XElement($"{className}",
+            //               new XElement($"{methodName}", $"{message}")
+
+            //    ));
+
+
+            //    myDoc.Save(@"C:\Users\jaffa\Desktop\testSummary.xml");
+            //}
+            //else 
+            //{
+            //XmlDocument doc = new XmlDocument();
+            //XmlElement root = doc.CreateElement("testsResults");
+            //XmlElement ClassNameTag = doc.CreateElement($"{className}");
+
+            //XmlElement methodNameTag = doc.CreateElement($"{methodName}");
+            //methodNameTag.InnerText = $"{message}";
+
+
+            //ClassNameTag.AppendChild(methodNameTag);
+
+            //projectNameTag.AppendChild(ClassNameTag);
+
+            //root.AppendChild(projectNameTag);
+
+            //doc.AppendChild(root);
+
+
+            //doc.Save(@"C:\Users\jaffa\Desktop\testSummary.xml");
+
+
+
+            xmlTestOutput.AddChildToRootElement(className, methodName, message);
+            
+            
 
             testOutput.Print($"{className}.{methodName} {message}");
         }
