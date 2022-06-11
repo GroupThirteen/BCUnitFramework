@@ -16,3 +16,9 @@ C:\Users\jaffa\Desktop\CapstoneDirectory\BCUnitFramework\obj\Debug\BCUnitFramewo
 C:\Users\jaffa\Desktop\CapstoneDirectory\BCUnitFramework\obj\Debug\BCUnitFramework.csproj.CoreCompileInputs.cache
 C:\Users\jaffa\Desktop\CapstoneDirectory\BCUnitFramework\obj\Debug\BCUnitFramework.dll
 C:\Users\jaffa\Desktop\CapstoneDirectory\BCUnitFramework\obj\Debug\BCUnitFramework.pdb
+C:\Users\jaffa\Desktop\Capstone2022\BCUnitFramework\BCUnitFramework\bin\Debug\BCUnitFramework.dll
+C:\Users\jaffa\Desktop\Capstone2022\BCUnitFramework\BCUnitFramework\bin\Debug\BCUnitFramework.pdb
+C:\Users\jaffa\Desktop\Capstone2022\BCUnitFramework\BCUnitFramework\obj\Debug\BCUnitFramework.csproj.AssemblyReference.cache
+C:\Users\jaffa\Desktop\Capstone2022\BCUnitFramework\BCUnitFramework\obj\Debug\BCUnitFramework.csproj.CoreCompileInputs.cache
+C:\Users\jaffa\Desktop\Capstone2022\BCUnitFramework\BCUnitFramework\obj\Debug\BCUnitFramework.dll
+C:\Users\jaffa\Desktop\Capstone2022\BCUnitFramework\BCUnitFramework\obj\Debug\BCUnitFramework.pdb

@@ -15,6 +15,8 @@ namespace BCUnitEngine
 
 
 
+    // Will continue this later
+    // setting up appDomain
 
     //public interface ILoader
     //{

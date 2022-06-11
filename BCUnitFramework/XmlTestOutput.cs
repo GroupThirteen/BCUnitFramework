@@ -3,15 +3,24 @@ using System.Xml.Linq;
 
 namespace BCUnitFramework
 {
+
+
+
+
+
     public class XmlTestOutput : ITestOutput
     {
         private string projectName;
-        private static string PATH = @"C:\Users\jaffa\Desktop\XML_data.xml";
+        //private static string PATH = @"C:\Users\jaffa\source\repos\Capstone Project\Testing user\TEST\TestSummary.xml";
+        private static string PATH;
+
         public XmlTestOutput(string projectName)
         {
             this.projectName = projectName;
 
         }
+
+
 
         // send to the child class
         public string GetResultString()
@@ -26,18 +35,13 @@ namespace BCUnitFramework
             throw new NotImplementedException();
         }
 
-
-
-     
-        //private XDocument xmlDocument;
-     
-        
-
-        public static void CreateInitialXml()
+        public static void CreateInitialXml(string newPath)
         {
+
+            PATH = newPath;
             XDocument xmlDocument = new XDocument(
                 new XDeclaration("1.0", "utf-8", "yes"),
-                new XComment("Comments skldjflkdsaf"),
+                new XComment("Test summary"),
 
                 // root element constructor
                 new XElement("BCUnitTestResults"));
@@ -64,8 +68,7 @@ namespace BCUnitFramework
                 projectNameX.Add(classNameX);
 
                 xmlDoc.Element("BCUnitTestResults").Add(projectNameX);
-            }
-            else if (xmlDoc.Element("BCUnitTestResults").Element(projectName).Element(className) == null) {
+            } else if (xmlDoc.Element("BCUnitTestResults").Element(projectName).Element(className) == null) {
                 //XElement messageX = new XElement(message);
                 XElement methodNameX = new XElement(methodName);
                 XElement classNameX = new XElement(className);
@@ -76,9 +79,8 @@ namespace BCUnitFramework
                 xmlDoc.Element("BCUnitTestResults").Element(projectName).Add(classNameX);
 
 
-                
-            }
-            else {
+
+            } else {
 
                 //XElement messageX = new XElement(message);
                 XElement methodNameX = new XElement(methodName);
@@ -88,19 +90,12 @@ namespace BCUnitFramework
                 xmlDoc.Element("BCUnitTestResults").Element(projectName).Element(className).Add(methodNameX);
 
             }
-                
+
             xmlDoc.Save(PATH);
         }
 
 
     }
-
-
-
-
-    ///////////////////////
-
-
 
 }
 

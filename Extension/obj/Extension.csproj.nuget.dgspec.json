@@ -1,19 +1,19 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jaffa\\Desktop\\CapstoneDirectory\\Extension\\Extension.csproj": {}
+    "C:\\Users\\jaffa\\Desktop\\Capstone2022\\BCUnitFramework\\Extension\\Extension.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jaffa\\Desktop\\CapstoneDirectory\\BCUnitEngine\\BCUnitEngine.csproj": {
+    "C:\\Users\\jaffa\\Desktop\\Capstone2022\\BCUnitFramework\\BCUnitEngine\\BCUnitEngine.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\jaffa\\Desktop\\CapstoneDirectory\\BCUnitEngine\\BCUnitEngine.csproj",
+        "projectUniqueName": "C:\\Users\\jaffa\\Desktop\\Capstone2022\\BCUnitFramework\\BCUnitEngine\\BCUnitEngine.csproj",
         "projectName": "BCUnitEngine",
-        "projectPath": "C:\\Users\\jaffa\\Desktop\\CapstoneDirectory\\BCUnitEngine\\BCUnitEngine.csproj",
+        "projectPath": "C:\\Users\\jaffa\\Desktop\\Capstone2022\\BCUnitFramework\\BCUnitEngine\\BCUnitEngine.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\jaffa\\Desktop\\CapstoneDirectory\\BCUnitFramework\\BCUnitFramework.csproj": {
-                "projectPath": "C:\\Users\\jaffa\\Desktop\\CapstoneDirectory\\BCUnitFramework\\BCUnitFramework.csproj"
+              "C:\\Users\\jaffa\\Desktop\\Capstone2022\\BCUnitFramework\\BCUnitFramework\\BCUnitFramework.csproj": {
+                "projectPath": "C:\\Users\\jaffa\\Desktop\\Capstone2022\\BCUnitFramework\\BCUnitFramework\\BCUnitFramework.csproj"
               }
             }
           }
@@ -23,11 +23,11 @@
         "net472": {}
       }
     },
-    "C:\\Users\\jaffa\\Desktop\\CapstoneDirectory\\BCUnitFramework\\BCUnitFramework.csproj": {
+    "C:\\Users\\jaffa\\Desktop\\Capstone2022\\BCUnitFramework\\BCUnitFramework\\BCUnitFramework.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\jaffa\\Desktop\\CapstoneDirectory\\BCUnitFramework\\BCUnitFramework.csproj",
+        "projectUniqueName": "C:\\Users\\jaffa\\Desktop\\Capstone2022\\BCUnitFramework\\BCUnitFramework\\BCUnitFramework.csproj",
         "projectName": "BCUnitFramework",
-        "projectPath": "C:\\Users\\jaffa\\Desktop\\CapstoneDirectory\\BCUnitFramework\\BCUnitFramework.csproj",
+        "projectPath": "C:\\Users\\jaffa\\Desktop\\Capstone2022\\BCUnitFramework\\BCUnitFramework\\BCUnitFramework.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}
@@ -38,14 +38,14 @@
         "net472": {}
       }
     },
-    "C:\\Users\\jaffa\\Desktop\\CapstoneDirectory\\Extension\\Extension.csproj": {
+    "C:\\Users\\jaffa\\Desktop\\Capstone2022\\BCUnitFramework\\Extension\\Extension.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jaffa\\Desktop\\CapstoneDirectory\\Extension\\Extension.csproj",
+        "projectUniqueName": "C:\\Users\\jaffa\\Desktop\\Capstone2022\\BCUnitFramework\\Extension\\Extension.csproj",
         "projectName": "Extension",
-        "projectPath": "C:\\Users\\jaffa\\Desktop\\CapstoneDirectory\\Extension\\Extension.csproj",
+        "projectPath": "C:\\Users\\jaffa\\Desktop\\Capstone2022\\BCUnitFramework\\Extension\\Extension.csproj",
         "packagesPath": "C:\\Users\\jaffa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jaffa\\Desktop\\CapstoneDirectory\\Extension\\obj\\",
+        "outputPath": "C:\\Users\\jaffa\\Desktop\\Capstone2022\\BCUnitFramework\\Extension\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -66,11 +66,11 @@
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\jaffa\\Desktop\\CapstoneDirectory\\BCUnitEngine\\BCUnitEngine.csproj": {
-                "projectPath": "C:\\Users\\jaffa\\Desktop\\CapstoneDirectory\\BCUnitEngine\\BCUnitEngine.csproj"
+              "C:\\Users\\jaffa\\Desktop\\Capstone2022\\BCUnitFramework\\BCUnitEngine\\BCUnitEngine.csproj": {
+                "projectPath": "C:\\Users\\jaffa\\Desktop\\Capstone2022\\BCUnitFramework\\BCUnitEngine\\BCUnitEngine.csproj"
               },
-              "C:\\Users\\jaffa\\Desktop\\CapstoneDirectory\\BCUnitFramework\\BCUnitFramework.csproj": {
-                "projectPath": "C:\\Users\\jaffa\\Desktop\\CapstoneDirectory\\BCUnitFramework\\BCUnitFramework.csproj"
+              "C:\\Users\\jaffa\\Desktop\\Capstone2022\\BCUnitFramework\\BCUnitFramework\\BCUnitFramework.csproj": {
+                "projectPath": "C:\\Users\\jaffa\\Desktop\\Capstone2022\\BCUnitFramework\\BCUnitFramework\\BCUnitFramework.csproj"
               }
             }
           }

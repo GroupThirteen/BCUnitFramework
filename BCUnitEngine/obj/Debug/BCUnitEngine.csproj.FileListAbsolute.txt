@@ -21,3 +21,12 @@ C:\Users\jaffa\Desktop\CapstoneDirectory\BCUnitEngine\obj\Debug\BCUnitEngine.csp
 C:\Users\jaffa\Desktop\CapstoneDirectory\BCUnitEngine\obj\Debug\BCUnitEngine.dll
 C:\Users\jaffa\Desktop\CapstoneDirectory\BCUnitEngine\obj\Debug\BCUnitEngine.pdb
 C:\Users\jaffa\Desktop\CapstoneDirectory\BCUnitEngine\obj\Debug\BCUnitEngine.csproj.CopyComplete
+C:\Users\jaffa\Desktop\Capstone2022\BCUnitFramework\BCUnitEngine\bin\Debug\BCUnitEngine.dll
+C:\Users\jaffa\Desktop\Capstone2022\BCUnitFramework\BCUnitEngine\bin\Debug\BCUnitEngine.pdb
+C:\Users\jaffa\Desktop\Capstone2022\BCUnitFramework\BCUnitEngine\bin\Debug\BCUnitFramework.dll
+C:\Users\jaffa\Desktop\Capstone2022\BCUnitFramework\BCUnitEngine\bin\Debug\BCUnitFramework.pdb
+C:\Users\jaffa\Desktop\Capstone2022\BCUnitFramework\BCUnitEngine\obj\Debug\BCUnitEngine.csproj.AssemblyReference.cache
+C:\Users\jaffa\Desktop\Capstone2022\BCUnitFramework\BCUnitEngine\obj\Debug\BCUnitEngine.csproj.CoreCompileInputs.cache
+C:\Users\jaffa\Desktop\Capstone2022\BCUnitFramework\BCUnitEngine\obj\Debug\BCUnitEngine.csproj.CopyComplete
+C:\Users\jaffa\Desktop\Capstone2022\BCUnitFramework\BCUnitEngine\obj\Debug\BCUnitEngine.dll
+C:\Users\jaffa\Desktop\Capstone2022\BCUnitFramework\BCUnitEngine\obj\Debug\BCUnitEngine.pdb
